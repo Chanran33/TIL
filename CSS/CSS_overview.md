@@ -26,12 +26,9 @@ ex) `div { color: red; margin: 20px; }`
 
 ## 2. 선언 방식
 
-<aside>
-💡 CSS 선언 방식에는 내장방식, 링크방식, 인라인 방식, @import 방식 이렇게 4가지가 있다.
+> 💡 CSS 선언 방식에는 내장방식, 링크방식, 인라인 방식, @import 방식 이렇게 4가지가 있다.
 
-</aside>
-
-1. **내장방식**
+**1) 내장방식**
 
 <style></style>의 내용(Contents)로 스타일을 작성하는 방식
 
@@ -93,7 +90,7 @@ div {
 
 ## 3. CSS 선택자\_기본
 
-1. **전체 선택자\_Universal Selector)**
+**1) 전체 선택자\_Universal Selector)**
 
 모든 요소를 선택.
 
@@ -141,10 +138,7 @@ ex)
 }
 ```
 
-<aside>
-💡 기본 선택자 4개는 순서대로 알아두기!
-
-</aside>
+> 💡 기본 선택자 4개는 순서대로 알아두기!
 
 ## 4. 선택자\_복합
 
@@ -205,8 +199,7 @@ div .orange {
   <ul>
     <li>사과</li>
     <li>딸기</li>
-    <li class="orange">오렌지</li>
-    //CSS적용!
+    <li class="orange">오렌지</li> //CSS적용!
   </ul>
   <div>당근</div>
   <p>토마토</p>
@@ -215,7 +208,7 @@ div .orange {
 <span class="orange">오렌지</span> //CSS 미적용!
 ```
 
-4. 인접 형제 선택자(Adjacent Sibling Combinator)
+**4) 인접 형제 선택자(Adjacent Sibling Combinator)**
 
 `ABC + XYZ`
 
@@ -234,10 +227,8 @@ ex)
   <li>사과</li>
   <li>딸기</li>
   <li class="orange">오렌지</li>
-  <li>망고</li>
-  //CSS적용!
-  <li>사과</li>
-  //하나만 찾기 때문에 CSS미적용!
+  <li>망고</li> //CSS적용!
+  <li>사과</li> //하나만 찾기 때문에 CSS미적용!
 </ul>
 ```
 
