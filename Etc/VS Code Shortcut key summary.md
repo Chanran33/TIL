@@ -1,3 +1,5 @@
+# VSCode 단축키 정리
+
 ### 사이드 바(Side Bar)열고/닫기
 
 - MacOS: CMD + B
