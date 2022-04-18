@@ -1,6 +1,6 @@
 # 기본 장면 구성요소 살펴보기
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f73be92a-4af4-40eb-b94a-849c891cd1ac/084B7A37-7E61-45AE-B4C9-8E5569AE426E.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220330%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220330T153803Z&X-Amz-Expires=86400&X-Amz-Signature=15deebc7e657f2d38a518c217042b9193efd7ee81c88b80a44d30830928a51e3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22084B7A37-7E61-45AE-B4C9-8E5569AE426E.jpeg%22&x-id=GetObject" width="500"/>
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f73be92a-4af4-40eb-b94a-849c891cd1ac/084B7A37-7E61-45AE-B4C9-8E5569AE426E.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220414T140703Z&X-Amz-Expires=86400&X-Amz-Signature=9fca69e8085520ea97133d9b195131364b6c26f665641ba064787a966081ae53&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22084B7A37-7E61-45AE-B4C9-8E5569AE426E.jpeg%22&x-id=GetObject" width="500"/>
 
 # 기본 장면 만들기 - Renderer
 
@@ -17,24 +17,21 @@
           <canvas></canvas>
         </body>
         ```
-
-        → 이쪽이 활용범위가 더 높다!
-
     → 이쪽이 활용범위가 더 높다!
 
-```html
-<body>
-  <canvas></canvas>
-</body>
-```
+    ```html
+    <body>
+      <canvas></canvas>
+    </body>
+    ```
 
-```jsx
-const canvas = document.querySelector("#three-canvas");
-const renderer = new THREE.WebGLRenderer({ canvas: canvas });
-//속성이랑 값이 같을 때는 한번만 써줘도 된다.
-//ex)({ canvas })
-renderer.setSize(window.innerWidth, window.innerHeight);
-```
+    ```jsx
+    const canvas = document.querySelector("#three-canvas");
+    const renderer = new THREE.WebGLRenderer({ canvas: canvas });
+    //속성이랑 값이 같을 때는 한번만 써줘도 된다.
+    //ex)({ canvas })
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    ```
 
 # 기본장면 만들기 - Camera
 
@@ -88,13 +85,10 @@ scene.add(mesh); //scene(무대)에 올리기
 renderer.render(scene, camera);
 ```
 
-![짠!](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/feb986b3-af9f-4c96-88c4-55ec1c393c8c/Untitled.png)
-
-짠!
-
-![카메라 위치 조정](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7bc216bc-fafc-4ee6-9f6f-363369d2588d/Untitled.png)
-
-카메라 위치 조정
+<div style="display:flex;">
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/feb986b3-af9f-4c96-88c4-55ec1c393c8c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220414T140729Z&X-Amz-Expires=86400&X-Amz-Signature=345637e4fcedcc245c8a5b13074110fb338af98431c36c83ca180c0f5a4f7a1d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="300" />
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7bc216bc-fafc-4ee6-9f6f-363369d2588d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220414T140900Z&X-Amz-Expires=86400&X-Amz-Signature=db430f54ab9dec2258c716d1dbbfc7723730c32bde10e8c9883c034f9ea0eb29&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="300"/>
+</div>
 
 ### Anti aliaasing(안티애리어싱) 처리해주기
 
@@ -121,8 +115,8 @@ Orthographic Camera
 - 하늘에서 보는 것과 같은 뷰
 - **디아블로, 롤**과 같은 게임에서 많이 사용한다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc75e859-9722-4e0b-bd09-75f4c58f778b/Untitled.png)
-
+<img src="https://i.stack.imgur.com/q1SNB.png" width="500px" />
+    
 ### 카메라 만들기
 
 OrthographicCamera(left, right, top, bottom, near, far)
