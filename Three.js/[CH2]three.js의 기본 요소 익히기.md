@@ -1,6 +1,6 @@
 # 기본 장면 구성요소 살펴보기
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f73be92a-4af4-40eb-b94a-849c891cd1ac/084B7A37-7E61-45AE-B4C9-8E5569AE426E.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220414T140703Z&X-Amz-Expires=86400&X-Amz-Signature=9fca69e8085520ea97133d9b195131364b6c26f665641ba064787a966081ae53&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22084B7A37-7E61-45AE-B4C9-8E5569AE426E.jpeg%22&x-id=GetObject" width="500"/>
+
 
 # 기본 장면 만들기 - Renderer
 
