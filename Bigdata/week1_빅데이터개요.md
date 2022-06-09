@@ -29,7 +29,8 @@
 
 ### 빅데이터 저장 및 관리(CAP 이론)
 
-(CAP이미지)
+<img src="https://user-images.githubusercontent.com/49816869/172874241-7c9c0f06-071f-4af7-80bd-8f39c588fc0a.jpg" width="500px" />
+
 
 - Consistency(일관성) : 분산 환경에서 모든 노드가 같은 시점에 같은 데이터를 보여 줘야 한다.
 - Availability(가용성) : 일부 노드가 다운되어도 다른 노드에 영향을 주지 않아야 한다.
